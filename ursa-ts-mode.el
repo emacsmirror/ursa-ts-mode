@@ -209,7 +209,7 @@ Return nil if there is no name or if NODE is not a defun node."
     (display-warning 'ursa-ts "`ursa' executable not found!")))
 
 ;;;###autoload
-(when (treesit-ready-p 'ursa)
+(progn
     (add-to-list 'auto-mode-alist
                  '("\\.ursa\\'" . ursa-ts-mode))
     (add-to-list 'treesit-language-source-alist
