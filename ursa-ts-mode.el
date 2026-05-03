@@ -79,6 +79,7 @@
      ((node-is "}") parent-bol 0)
      ((node-is ")") parent-bol 0)
      ((node-is "]") parent-bol 0)
+     ((parent-is "asm") parent-bol ursa-ts-mode-indent-offset)
      ((parent-is "block") parent-bol ursa-ts-mode-indent-offset)
      ((parent-is "list") parent-bol ursa-ts-mode-indent-offset)
      ((parent-is "object") parent-bol ursa-ts-mode-indent-offset)
@@ -97,7 +98,7 @@
    '((["[" "]" "{" "}"]) @font-lock-bracket-face)
    :language 'ursa
    :feature 'keyword
-   '((["and" "break" (continue) "else" "for" "fn" "gen" "if" "in" "let" "loop" "not" "or" "return" "use" "var" "yield"])
+   '((["and" "asm" "break" (continue) "else" "for" "fn" "gen" "if" "in" "let" "loop" "not" "or" "return" "use" "var" "yield"])
      @font-lock-keyword-face)
    :language 'ursa
    :feature 'function-name
