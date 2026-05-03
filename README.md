@@ -1,6 +1,6 @@
 # ursa-ts-mode
 
-© 2023 Reuben Thomas  
+© Reuben Thomas <rrt@sc3d.org>  
 
 An Emacs mode for the [Ursa programming language](https://ursalang.github.io).
 This mode requires tree-sitter, which is built into Emacs 29 or later.
